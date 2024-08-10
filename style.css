@@ -7,11 +7,325 @@
 }
 
 body {
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   color: var(--primary-color);
   font-size: 14px;
 }
 
+@media only screen and (max-width: 1024px) {
+  #discount-bar {
+    flex-direction: column;
+    font-size: 13px;
+    text-align: center;
+  }
+  #nav-items {
+    flex-direction: row;
+    gap: 2px;
+  }
+  #header {
+    font-size: 12px;
+  }
+  #search-input {
+    width: 350px;
+    padding-left: 130px;
+    height: 35px;
+  }
+  #icon-header {
+    padding-right: 20px;
+  }
+  #icon-down {
+    margin-left: 0;
+  }
+  #search-button {
+    width: 60px;
+    height: 35px;
+  }
+  #text-icon-header {
+    display: none;
+  }
+  #img-header {
+    width: 20px;
+    height: auto;
+  }
+  #quanlity {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+  }
+  #menu {
+    font-size: 12px;
+  }
+  #menu-li {
+    margin-right: -20px;
+  }
+  #sale-img {
+    width: 15px;
+    height: auto;
+  }
 
+  #text-banner {
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 170px;
+  }
+  #year-title {
+    font-size: 35px;
+  }
+  #title-banner {
+    font-size: 35px;
+  }
+  #bt-banner {
+    width: 100px;
+    height: 35px;
+    font-size: 11px;
+  }
+  #tap {
+    display: none;
+  }
+  #text-bn-mn {
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  #text-sale {
+    font-size: 11px;
+    padding-top: 15px;
+  }
+  #banner {
+    height: 340px;
+  }
 
+  #content {
+    flex-direction: column;
+  }
+  #content-left {
+    flex-direction: row;
+    margin-top: 70px;
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+  #content-right {
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 10px;
+  }
+  #product-center {
+    flex-direction: row;
+    align-items: center;
+    height: 410px;
+    width: 900px;
+  }
+  #product-hot {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 400px;
+  }
+  #hr {
+    display: none;
+  }
+  #today {
+    display: none;
+  }
+  #sale-today {
+    width: 100px;
+    font-size: 15px;
+    height: 45px;
+    margin-top: 0px;
+  }
+  #gift {
+    display: none;
+  }
+  #info-product {
+    padding-top: 60px;
+  }
+  #footer {
+    margin-top: 550px;
+    font-size: 11px;
+  }
+  #phone {
+    font-size: 20px;
+  }
+  #join {
+    font-size: 13px;
+  }
+  #form-input {
+    display: flex;
+  }
+  #input-ft {
+    width: 200px;
+    height: 45px;
+  }
+  #button-ft {
+    font-size: 9px;
+    height: 45px;
+    width: 90px;
+  }
+  #bottom-ft {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
 
+@media only screen and (max-width: 740px) {
+  #discount-bar {
+    font-size: 11px;
+  }
+  #nav-items {
+    flex-direction: row;
+  }
+  #header {
+    font-size: 11px;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 5px;
+  }
+  #search-input {
+    width: 330px;
+    padding-left: 130px;
+    height: 35px;
+  }
+  #icon-down {
+    margin-left: 0;
+  }
+  #search-button {
+    width: 60px;
+    height: 35px;
+  }
+  #text-icon-header {
+    display: none;
+  }
+  #img-header {
+    width: 20px;
+    height: auto;
+  }
+  #quanlity {
+    width: 10px;
+    height: 10px;
+    font-size: 6px;
+  }
+  #menu {
+    flex-direction: column;
+    font-size: 11px;
+  }
+  #menu-li {
+    margin-right: -30px;
+  }
+  #menu i {
+    font-size: 0px;
+  }
+  #sale-img {
+    width: 13px;
+    height: auto;
+  }
+  #text-banner {
+    margin-top: 25px;
+    margin-left: 30px;
+    height: 100px;
+  }
+  #year-title {
+    font-size: 20px;
+  }
+  #p-banner {
+    font-size: 8px;
+  }
+  #title-banner {
+    font-size: 24px;
+  }
+  #bt-banner {
+    width: 70px;
+    font-size: 8px;
+    height: 23px;
+  }
+  #tap {
+    display: none;
+  }
+
+  #text-bn-mn {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 10px;
+  }
+  #text-sale {
+    font-size: 9px;
+    padding-top: 10px;
+  }
+  #banner {
+    height: 220px;
+  }
+
+  #content {
+    flex-direction: column;
+  }
+  #content-left {
+    flex-direction: column;
+    margin-top: 70px;
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+
+  #content-right {
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 10px;
+  }
+  #product-center {
+    flex-direction: row;
+    align-items: center;
+    height: 780px;
+    width: 460px;
+  }
+  #product-hot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #hr {
+    display: none;
+  }
+  #today {
+    display: none;
+  }
+  #sale-today {
+    width: 50px;
+    font-size: 12px;
+    height: 25px;
+    margin-top: -600px;
+  }
+  #gift {
+    display: none;
+  }
+  #info-product {
+    padding-top: 60px;
+  }
+  #footer {
+    margin-top: 1650px;
+    font-size: 11px;
+  }
+  #text-ft {
+    flex-direction: row;
+    align-content: center;
+  }
+  #phone {
+    font-size: 18px;
+  }
+  #join {
+    font-size: 12px;
+  }
+  #form-input {
+    display: flex;
+  }
+  #input-ft {
+    width: 150px;
+    height: 35px;
+  }
+  #button-ft {
+    font-size: 7px;
+    height: 35px;
+    width: 70px;
+  }
+  #bottom-ft {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
