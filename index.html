@@ -7,107 +7,122 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body class="bg-[#F1F5F6]">
     <header class="bg-white w-full">
         <div id="discount-bar"
-            class="w-full max-w-[1410px] h-[46px] mx-auto text-[13px] flex justify-between items-center font-semibold">
-            <p id="discount-text" class="text-[#8d979e]">
+            class="w-full max-w-[1410px] h-[41px] mx-auto text-[13px] font-medium flex justify-between items-center ">
+            <p class="text-[#515D66]">
                 You are a student and students get 20% discount.
                 <span class="font-semibold cursor-pointer underline text-[#212529]">Learn More</span>
             </p>
-            <nav id="navigation">
-                <ul class="flex pt-1">
-                    <li id="nav-items" class="flex items-center space-x-[18px]">
+            <nav>
+                <ul class="pt-[1px]">
+                    <li id="nav-items" class="flex gap-[20px] items-center  text-[#212529] pr-[2px]">
                         <a href="#" class="hover:text-[#8d979e]">Store Locator</a>
-                        <a href="#" class="hover:text-[#8d979e]">Order Tracking</a>
-                        <a href="#" class="hover:text-[#8d979e]">FAQs</a>
-                        <img src="/images/line.jpg" alt="Line">
-                        <a href="#" class="hover:text-[#8d979e]">English <i class="fa-solid fa-angle-down"></i></a>
-                        <a href="#" class="hover:text-[#8d979e]">USD <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#" class="hover:text-[#8d979e] pl-[1px]">Order Tracking </a>
+                        <a href="#" class="hover:text-[#8d979e] pl-[1px]">FAQs</a>
+                        <img src="/images/line.png" alt="Line" class="pl-[1px]">
+                        <a href="#" class="hover:text-[#8d979e] pl-[1px]">English <i
+                                class="fa-solid fa-chevron-down text-[8px] pl-[1px]"></i></a>
+                        <a href="#" class="hover:text-[#8d979e]">USD <i
+                                class="fa-solid fa-chevron-down text-[8px] pl-1"></i></a>
                     </li>
                 </ul>
             </nav>
         </div>
 
-
         <hr class="border">
 
-        <div id="header" class="w-full max-w-[1410px] h-[83px] mx-auto flex items-center justify-between">
+        <div id="header" class="w-full max-w-[1410px] h-[84px] mx-auto flex items-center justify-between ">
             <img src="/images/Logo.jpg" alt="Logo">
-            <form id="form-search" class="flex items-center relative">
-                <div class="relative flex items-center ml-[47px]">
-                    <p class="absolute hover:cursor-pointer left-6 font-semibold flex items-center space-x-6">
-                        <span>All Categories</span>
-                        <i id="icon-down" class="fa-solid fa-angle-down text-[11px] pl-[4px]"></i>
-                        <img src="/images/line.jpg" class="pl-[1px]" alt="Line">
+            <form id="form-search" class="flex items-center -mt-[2px]">
+                <div class="relative flex items-center ml-[47px] font-semibold">
+                    <p class="absolute hover:cursor-pointer left-[26px]  flex items-center space-x-[24px]">
+                        <span class="text-[#212529]">All Categories</span>
+                        <i id="icon-down" class="fa-solid fa-chevron-down text-[10px] pl-[4px]"></i>
                     </p>
                     <input id="search-input" type="text"
-                        class="w-[672px] h-[45px] placeholder:text-[14px] border-2 rounded-l-md pl-[205px] text-sm"
+                        class="w-[673px] mt-[1px] h-[45px] font-normal  placeholder:text-[13px] border-2 rounded-l-md pl-[205px]"
                         placeholder="Search in 200+ products...">
                     <button id="search-button" type="submit"
-                        class="bg-[#2b38d1] text-white font-semibold border-none w-[110px] h-[45px] rounded-r-md cursor-pointer">
+                        class="bg-[#2b38d1] text-white  w-[110px] h-[46px] rounded-r-md cursor-pointer">
                         Search
                     </button>
                 </div>
             </form>
-            <div>
-                <div id="icon-header" class="flex items-center space-x-[34px]">
-                    <div class="flex items-center space-x-2 cursor-pointer -mr-1">
-                        <img  src="/images/user.jpg" class="w-6 h-6" alt="User">
-                        <div id="text-icon-user" class="-space-y-1 pl-[1px]">
-                            <div class="text-[11px] text-[#515D66] hover:underline">Login</div>
-                            <div class="font-semibold hover:underline text-[13px]">Account</div>
-                        </div>
+            <div id="icon-header" class="flex items-center gap-7 ">
+                <div class="flex items-center gap-[10px] cursor-pointer -mr-[2px]">
+                    <img src="/images/user.jpg" alt="User">
+                    <div id="text-icon-user" class="-space-y-1 ">
+                        <div class="text-[11px] text-[#515D66] hover:underline font-normal">Login</div>
+                        <div class="font-semibold hover:underline text-[14px]">Account</div>
                     </div>
-                    <div class="relative flex items-center cursor-pointer">
-                        <img  src="/images/heart.png" alt="Heart">
-                        <p
-                            class="absolute -mt-5 ml-4 w-[18px] h-[18px] bg-[#DD3842] text-white rounded-full text-[9px] font-semibold flex items-center justify-center">
-                            2
-                        </p>
-                    </div>
-                    <div class="relative flex items-center space-x-[44px] cursor-pointer h-6">
-                        <img  src="/images/cart.jpg" alt="Cart">
-                        <p
-                            class="absolute -mt-5 left-[-26px] w-[18px] h-[18px] bg-[#DD3842] text-white rounded-full text-[9px] font-semibold flex items-center justify-center">
-                            2
-                        </p>
-                        <div id="text-icon-cart" class="-space-y-1">
-                            <p class="text-[11px] text-[#515D66] -ml-[26px]">Your Cart</p>
-                            <p class="font-semibold -ml-[25px] text-[15px]">$280.00</p>
-                        </div>
+                </div>
+                <div class="relative flex items-center cursor-pointer">
+                    <img src="/images/heart.png" alt="Heart">
+                    <p
+                        class="absolute -mt-[18px] ml-[18px] w-[18px] h-[18px] bg-[#DD3842] text-white rounded-full text-[10px] font-semibold flex items-center justify-center">
+                        2
+                    </p>
+                </div>
+                <div class="relative flex items-center  cursor-pointer gap-[18px] pl-[7px]">
+                    <img src="/images/cart.jpg" alt="Cart">
+                    <p
+                        class="absolute -mt-[18px] ml-[17px] w-[18px] h-[18px] bg-[#DD3842] text-white rounded-full text-[10px] font-semibold flex items-center justify-center">
+                        2
+                    </p>
+                    <div id="text-icon-cart" class="-space-y-1">
+                        <p class="text-[11px] text-[#515D66] font-normal">Your Cart</p>
+                        <p class="font-semibold  text-[14px]">$280.00</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr class="border">
+        <hr class="border ">
 
-        <div id="menu" class="w-full max-w-[1410px] h-[47px] mx-auto font-semibold flex items-center justify-between">
+        <div id="menu" class="w-full max-w-[1410px] h-[47px] mx-auto font-semibold flex items-center justify-between ">
             <ul>
-                <li id="menu-li" class="space-x-[28px]">
-                    <a href="#" class="hover:text-[#8d979e]"><span>Home</span> <i
-                            class="fa-solid fa-angle-down text-[12px] pl-[2px]"></i></a>
-                    <a href="#" class="hover:text-[#8d979e]"><span>Shop</span> <i
-                            class="fa-solid fa-angle-down text-[12px] pl-[2px]"></i></a>
-                    <a href="#" class="hover:text-[#8d979e]"><span>Product</span> <i
-                            class="fa-solid fa-angle-down text-[12px] pl-[2px]"></i></a>
-                    <a href="#" class="hover:text-[#8d979e]"><span>Page</span> <i
-                            class="fa-solid fa-angle-down text-[12px] pl-[2px]"></i></a>
-                    <a href="#" class="hover:text-[#8d979e]"><span>Blog</span> <i
-                            class="fa-solid fa-angle-down text-[12px] pl-[2px]"></i></a>
+                <li id="menu-li" class="space-x-[28px] -mt-[1px]">
+                    <a href="#" class="hover:text-[#8d979e] ">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] pl-[2px]"></i>
+                    </a>
+                    <a href="#" class="hover:text-[#8d979e]">
+                        <span>Shop</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] pl-[4px]"></i>
+                    </a>
+                    <a href="#" class="hover:text-[#8d979e]">
+                        <span>Product</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] pl-[4px]"></i>
+                    </a>
+                    <a href="#" class="hover:text-[#8d979e]">
+                        <span>Page</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] pl-[4px]"></i>
+                    </a>
+                    <a href="#" class="hover:text-[#8d979e]">
+                        <span>Blog</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] pl-[4px]"></i>
+                    </a>
                     <a href="#" class="hover:text-[#8d979e]">Contact Us</a>
-                    <a href="#" class="text-[#DC323C] hover:text-red-300">Buy Uminex!</a>
+                    <a href="#" class="text-[#DC323C] hover:text-red-300 ">Buy Uminex!</a>
                 </li>
             </ul>
-            <div class="flex items-center space-x-2">
+            <div class="flex items-center -mt-[2px] gap-2">
                 <img id="sale-img" src="/images/icon.jpg" class="w-[23px] h-[23px]" alt="Sale">
                 <p>Sale $20 Off Your First Order.</p>
             </div>
         </div>
+        <hr class="border ">
+
     </header>
 
     <main class="w-full max-w-[1410px]  mx-auto  mt-[30px] mb-[60px] space-y-[60px]">
@@ -115,59 +130,55 @@
             <div class="relative ">
                 <img src="/images/banner.jpg" alt="Banner">
                 <div id="text-banner"
-                    class="absolute inset-0 flex flex-col justify-between ml-[190px] mt-[100px]  h-[210px]  text-white text-[11px]">
-                    <p id="p-banner" class="text-[#FDE50B]  font-semibold ml-1">GAMEPAD CONSOLE</p>
-
-                    <div id="title-banner" class="text-[43px] font-semibold  -space-y-[19px] -mt-2">
-                        <p class="-ml-[1px]">Today's Offer</p>
-                        <p>Skin <span class="text-[#17F084]  -ml-[2px]">Gamepad</span>
-                            <span id="year-title" class="text-[46px] font-semibold"> 2022</span>
+                    class="absolute inset-0 flex flex-col justify-between ml-[190px] mt-[98px]  h-[210px]  text-white text-[12px]">
+                    <p id="p-banner" class="text-[#FDE50B]  font-bold">GAMEPAD CONSOLE</p>
+                    <div id="title-banner" class="text-[44px] font-semibold -space-y-[16px] -mt-[11px] ml-[1px]">
+                        <p class="">Today’s <span class="-ml-[4px]">Offer</span></p>
+                        <p>Skin <span class="text-[#17F084] -ml-[3px]">Gamepad</span>
+                            <span id="year-title"> 2022</span>
                         </p>
                     </div>
                     <button id="bt-banner" type="submit"
-                        class="bg-white text-black h-[45px] w-[151px] rounded-[50px] font-bold text-[12px] ml-[1px]">
+                        class="bg-white text-black h-[44px] w-[151px] rounded-[50px] font-bold  ">
                         SHOP NOW
                     </button>
                 </div>
-                <div  class="tap absolute  top-[180px] left-[30px]">
+                <div class="tap absolute  top-[180px] left-[30px]">
                     <button type="submit"
                         class="bg-[#736a7b] bg-opacity-60 hover:bg-white hover:text-black text-white w-[50px] h-[50px] rounded-full">
                         <i class="fa-solid fa-angle-left text-[13px]"></i>
                     </button>
                 </div>
-                <div  class="tap absolute  top-[180px] right-[30px]">
+                <div class="tap absolute  top-[180px] right-[30px]">
                     <button type="submit"
                         class="bg-[#736a7b] bg-opacity-60 hover:bg-white hover:text-black text-white w-[50px] h-[50px] rounded-full">
                         <i class="fa-solid fa-angle-right text-[13px]"></i>
                     </button>
                 </div>
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between text-[18px] font-semibold">
                 <div class="relative">
                     <img src="/images/banner2.png" alt="Banner">
-                    <div 
-                        class="text-bn-mn absolute inset-0 pt-[34px] pl-[30px] text-[18px] font-semibold -space-y-[3px]">
+                    <div class="text-bn-mn absolute inset-0 pt-[33px] pl-[30px] -space-y-[4px]">
                         <p>Trending</p>
                         <p>New Phone Pro</p>
-                        <p class=" text-sale font-medium  pt-6 ml-[2px] text-[14px]">Save 20% On Products</p>
+                        <p class=" text-sale font-medium  pt-[26px] text-[14px]">Save 20% On Products</p>
                     </div>
                 </div>
                 <div class="relative">
                     <img src="/images/banner1.png" alt="Banner">
-                    <div 
-                        class="text-bn-mn absolute inset-0 pt-[34px] pl-[30px] text-[18px] font-semibold -space-y-[3px]">
+                    <div class="text-bn-mn absolute inset-0 pt-[33px] pl-[30px] -space-y-[4px]">
                         <p>Top Product</p>
                         <p>MateBook Pro 2022</p>
-                        <p class=" text-sale font-medium  pt-6 ml-[2px] text-[14px]">Top Quality Products</p>
+                        <p class=" text-sale font-medium  pt-[26px] text-[14px]">Top Quality Products</p>
                     </div>
                 </div>
                 <div class="relative">
                     <img src="/images/banner3.png" alt="Banner">
-                    <div 
-                        class="text-bn-mn absolute inset-0 pt-[34px] pl-[30px] text-[18px] font-semibold -space-y-[3px]">
+                    <div class="text-bn-mn absolute inset-0 pt-[33px] pl-[30px] -space-y-[4px]">
                         <p>iPad Pro</p>
                         <p>Up To 20% Off</p>
-                        <p class=" text-sale font-medium  pt-6 ml-[2px] text-[14px]">20 Days Return Products</p>
+                        <p class=" text-sale font-medium  pt-[26px] text-[14px]">20 Days Return Products</p>
                     </div>
                 </div>
             </div>
@@ -180,24 +191,24 @@
                             class="w-[231px] h-[373px] border border-white bg-white rounded-[5px] flex justify-center hover:border-[#DC323C] hover:border hover:cursor-pointer ">
                             <div class="relative pt-[19px]">
                                 <p
-                                    class="absolute w-[55px] h-[25px] rounded-[2px]  flex justify-center items-center text-[12px] text-white bg-[#DC323C] font-semibold ">
+                                    class="absolute w-[54px] h-[25px] rounded-[2px]  flex justify-center items-center text-[12px] text-white bg-[#DC323C] font-semibold ">
                                     -20%</p>
                                 <img src="/images/product-left.png" alt="Product">
-                                <p class="w-[191px]  font-semibold mt-[16px] pl-[4px] text-[13px]">Apple iPhone 12 Pro
+                                <p class="w-[191px] leading-[18px]  font-semibold pt-[15px]">Apple iPhone 12 Pro
                                     Max 128GB - Unlocked</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[10px] -ml-[2px]">
-                                    <div class="flex text-[#FFB800]">
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[14px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </div>
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
-                                <div class="flex items-center space-x-[6px]  pt-[3px]">
+                                <div class="flex items-center space-x-[5px] -ml-[1px] pt-[1px]">
                                     <p class="text-[18px] text-[#DC323C] font-semibold">$128.00</p>
-                                    <p class="text-[#8D979E] "><del>$12.00</del></p>
+                                    <p class="text-[#8D979E] font-normal pt-[3px]"><del>$12.00</del></p>
                                 </div>
-                                <div class="flex text-[12px] items-center space-x-[6px] pt-2 ">
+                                <div class="flex text-[12px] items-center gap-1 pt-[10px] ">
                                     <i class="fa-solid fa-check text-[#008A00]"></i>
                                     <p class="text-[#008A00] font-medium">In stock</p>
                                     <p class="font-semibold">82</p>
@@ -209,11 +220,11 @@
                         <div
                             class="w-[231px] h-[373px] border border-white bg-white rounded-[5px] flex justify-center hover:border-[#DC323C] hover:border hover:cursor-pointer ">
                             <div class="pt-5">
-                                <img alt="Product" src="/images/product-left-2.png" class="pl-[2px]">
-                                <p class="w-[195px]  font-semibold pt-[13px] pl-[1px] text-[14px] ">Apple Watch Aluminum
+                                <img alt="Product" src="/images/product-left-2.png">
+                                <p class="w-[191px] leading-[19px] font-semibold pt-[14px] ">Apple Watch Aluminum
                                     Case Pride Edition</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[9px]">
-                                    <div class="flex text-[#FFB800]">
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[12px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -221,10 +232,10 @@
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
                                 <div>
-                                    <p class="text-[19px]  text-[#2B38D1] font-semibold">$1028.00</p>
+                                    <p class="text-[18px]  text-[#2B38D1] font-semibold pt-[1px] -ml-[1px]">$1028.00</p>
                                 </div>
                                 <div
-                                    class="flex text-[13px] items-center space-x-[6px] pt-[9px] -ml-[1px] text-[#EF262C] font-medium">
+                                    class="flex text-[12px] items-center space-x-[5px] pt-[10px]   text-[#EF262C] font-medium">
                                     <i class="fa-solid fa-check "></i>
                                     <p>Only 2 left in stock</p>
                                 </div>
@@ -236,21 +247,21 @@
                             class="w-[231px] h-[373px] border border-white bg-white rounded-[5px] flex justify-center hover:border-[#DC323C] hover:border hover:cursor-pointer ">
                             <div class="pt-[19px]    ">
                                 <img alt="Product" src="/images/product-left-3.png">
-                                <p class="w-[191px]  font-semibold mt-[17px] pl-[3px] text-[13px]">Apple iPhone 12 Pro
+                                <p class="w-[191px] leading-[18px]  font-semibold pt-[15px]">Apple iPhone 12 Pro
                                     Max 128GB - Unlocked</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[10px] -ml-[2px]">
-                                    <div class="flex text-[#FFB800]">
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[14px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </div>
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
-                                <div class="flex items-center space-x-[6px]  pt-[3px]">
-                                    <p class="text-[18px] text-[#DC323C] font-semibold -ml-[1px]">$128.00</p>
-                                    <p class="text-[#8D979E] "><del>$12.00</del></p>
+                                <div class="flex items-center space-x-[5px] -ml-[1px] pt-[1px]">
+                                    <p class="text-[18px] text-[#DC323C] font-semibold">$128.00</p>
+                                    <p class="text-[#8D979E] font-normal pt-[3px]"><del>$12.00</del></p>
                                 </div>
-                                <div class="flex text-[12px] items-center space-x-[6px] pt-[10px] -ml-[2px] ">
+                                <div class="flex text-[12px] items-center gap-1 pt-[10px] ">
                                     <i class="fa-solid fa-check text-[#008A00]"></i>
                                     <p class="text-[#008A00] font-medium">In stock</p>
                                     <p class="font-semibold">82</p>
@@ -263,13 +274,13 @@
                             class="w-[231px] h-[373px] border border-white bg-white rounded-[5px] flex justify-center hover:border-[#DC323C] hover:border hover:cursor-pointer ">
                             <div class="relative pt-5 ">
                                 <p
-                                    class="absolute w-[55px] h-[25px] rounded-[2px] ml-[1px] pt-[2px] flex justify-center items-center text-[11px] text-white bg-[#008A00] font-medium ">
+                                    class="absolute w-[54px] h-[25px] rounded-[2px] flex justify-center items-center text-[12px] text-white bg-[#008A00] font-medium ">
                                     NEW</p>
                                 <img alt="Product" src="/images/product-left-4.png">
-                                <p class="w-[195px]  font-semibold pt-[14px] pl-[1px] text-[14px] ">Apple Watch Aluminum
+                                <p class="w-[191px] leading-[19px] font-semibold pt-[14px] ">Apple Watch Aluminum
                                     Case Pride Edition</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[9px]">
-                                    <div class="flex text-[#FFB800]">
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[12px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -277,13 +288,12 @@
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
                                 <div>
-                                    <p class="text-[19px]  text-[#2B38D1] font-semibold">$1028.00</p>
+                                    <p class="text-[18px]  text-[#2B38D1] font-semibold pt-[1px] -ml-[1px]">$1028.00</p>
                                 </div>
                                 <div
-                                    class="flex text-[13px] items-center space-x-[6px] pt-[9px] -ml-[1px] text-[#EF262C] font-medium">
+                                    class="flex text-[12px] items-center space-x-[5px] pt-[10px]   text-[#EF262C] font-medium">
                                     <i class="fa-solid fa-check "></i>
                                     <p>Only 2 left in stock</p>
-
                                 </div>
                             </div>
                         </div>
@@ -293,32 +303,32 @@
                     class="w-[466px] h-[751px] flex justify-center border-2 border-[#DC323C] bg-white rounded-[5px] hover:cursor-pointer">
                     <div id="product-hot" class="relative pt-[30px] w-[386px]">
                         <p id="sale-today"
-                            class="absolute w-[55px] h-[25px] rounded-[2px] mt-[57px] flex justify-center items-center text-[12px] text-white bg-[#DC323C] font-semibold ">
+                            class="absolute w-[54px] h-[25px] rounded-[2px] mt-[55px] flex justify-center items-center text-[12px] text-white bg-[#DC323C] font-semibold ">
                             -20%</p>
                         <div id="gift"
                             class="absolute right-0 border mt-[57px] w-[32px] h-[32px] rounded-full flex justify-center items-center">
                             <img src="/images/gift.png" alt="gift" id="img-gift">
                         </div>
-                        <p id="today" class="text-[16px] font-bold pb-[8px] mt-[3px] -ml-[2px]">TODAY'S OFFER</p>
+                        <p id="today" class="text-[16px] font-bold pb-[8px] mt-[2px] ">TODAY'S OFFER</p>
                         <hr class="mb-5" id="hr">
                         <img alt="Product" src="/images/product-center.png">
-                        <div id="info-product" class="pt-[17px]">
-                            <p class=" font-bold">Apple iPhone 13 ProMax 128GB Gold Fully Unlocked</p>
-                            <div class="flex text-[11px] items-center space-x-[7px] pt-[13px]">
-                                <div class="flex text-[#FFB800]">
+                        <div id="info-product" class="pt-[15px]">
+                            <p class=" font-semibold">Apple iPhone 13 Pro Max 128GB Gold Fully Unlocked</p>
+                            <div class="flex text-[11px] items-center space-x-[7px] pt-[14px]">
+                                <div class="flex text-[#FFB800] text-[11px]">
                                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
                                 <p class="text-[#8D979E] text-[12px] pt-[2px] ">29 reviews</p>
                             </div>
-                            <div class="flex items-center space-x-[6px] pt-[1px]">
+                            <div class="flex items-center space-x-[5px] -ml-[1px] pt-[1px]">
                                 <p class="text-[18px] text-[#DC323C] font-semibold">$128.00</p>
-                                <p class="text-[#8D979E] "><del>$12.00</del></p>
+                                <p class="text-[#8D979E] font-normal pt-[2px]"><del>$12.00</del></p>
                             </div>
-                            <div class="space-y-2 pt-[12px] -ml-[1px]">
-                                <p class="text-[#515D66] ">Hurry up ! Offer ends in:</p>
-                                <div class="flex justify-between items-center w-[238px]">
+                            <div class="space-y-[8px] pt-[13px]">
+                                <p class="text-[#515D66] ">Hurry up! Offer ends in:</p>
+                                <div class="flex justify-between items-center w-[238px] -ml-[1px]">
                                     <p
                                         class="w-[45px] h-[50px] text-white bg-[#DC323C] rounded-[3px] flex justify-center items-center font-bold">
                                         826</p>
@@ -341,8 +351,8 @@
                                     <div class="bg-[#EF262C] h-[5px] w-[330px] rounded-full"></div>
                                 </div>
                                 <div
-                                    class="flex text-[12px] items-center space-x-1 pt-[7px] text-[#515D66] font-medium">
-                                    <p>Sole: <span class="font-bold text-[#212529] ">620 / 896</span> products</p>
+                                    class="flex text-[12px] items-center space-x-1 pt-[6px] text-[#515D66] font-medium">
+                                    <p>Sold: <span class="font-semibold text-[#212529] ">620/896</span> products</p>
                                 </div>
                             </div>
                         </div>
@@ -354,10 +364,10 @@
                             class="w-[231px] h-[373px] border border-white bg-white rounded-[5px] flex justify-center hover:border-[#DC323C] hover:border hover:cursor-pointer ">
                             <div class="pt-5">
                                 <img alt="Product" src="/images/product-right.png">
-                                <p class="w-[191px]  font-semibold pt-[15px] pl-[4px] text-[13px]">Apple iPhone 12 Pro
+                                <p class="w-[191px] leading-[18px]  font-semibold pt-[15px]">Apple iPhone 12 Pro
                                     Max 128GB - Unlocked</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[10px] -ml-[2px]">
-                                    <div class="flex text-[#FFB800]">
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[14px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -365,9 +375,9 @@
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
                                 <div>
-                                    <p class="text-[19px]  text-[#2B38D1] font-semibold">$289.00</p>
+                                    <p class="text-[18px]  text-[#2B38D1] font-semibold pt-[1px] -ml-[1px]">$289.00</p>
                                 </div>
-                                <div class="flex text-[12px] items-center space-x-[6px] pt-[10px] ">
+                                <div class="flex text-[12px] items-center gap-1 pt-[10px] ">
                                     <i class="fa-solid fa-check text-[#008A00]"></i>
                                     <p class="text-[#008A00] font-medium">In stock</p>
                                     <p class="font-semibold">82</p>
@@ -382,22 +392,22 @@
                                     class="absolute w-[55px] h-[25px] rounded-[2px]  flex justify-center items-center text-[12px] text-white bg-[#DC323C] font-semibold ">
                                     -20%</p>
                                 <img alt="Product" src="/images/product-right-2.png">
-                                <p class="w-[197px]  font-semibold pt-[13px] pl-[3px] ">Apple Watch Aluminum Case Pride
-                                    Edition</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[10px] ml-[1px]">
-                                    <div class="flex text-[#FFB800]">
+                                <p class="w-[191px] leading-[19px] font-semibold pt-[14px] ">Apple Watch Aluminum
+                                    Case Pride Edition</p>
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[12px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </div>
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
-                                <div class="flex items-center space-x-[6px] pt-[1px] pl-[2px]">
+                                <div class="flex items-center space-x-[5px] -ml-[1px] pt-[1px]">
                                     <p class="text-[18px] text-[#DC323C] font-semibold">$128.00</p>
-                                    <p class="text-[#8D979E] "><del>$12.00</del></p>
+                                    <p class="text-[#8D979E] font-normal pt-[3px]"><del>$12.00</del></p>
                                 </div>
                                 <div
-                                    class="flex text-[13px] items-center space-x-[6px] pt-[9px] text-[#EF262C] font-medium">
+                                    class="flex text-[12px] items-center space-x-[5px] pt-[10px]   text-[#EF262C] font-medium">
                                     <i class="fa-solid fa-check "></i>
                                     <p>Only 2 left in stock</p>
                                 </div>
@@ -410,24 +420,24 @@
                             class="w-[231px] h-[373px] border border-white bg-white rounded-[5px] flex justify-center hover:border-[#DC323C] hover:border hover:cursor-pointer ">
                             <div class="relative pt-5">
                                 <p
-                                    class="absolute w-[55px] h-[25px] rounded-[2px]  flex justify-center items-center text-[12px] text-white bg-[#DC323C] font-semibold ">
+                                    class="absolute w-[54px] h-[25px] rounded-[2px]  flex justify-center items-center text-[12px] text-white bg-[#DC323C] font-semibold ">
                                     -20%</p>
-                                <img alt="Product" src="/images/product-right-3.png">
-                                <p class="w-[191px]  font-semibold pt-[16px] pl-[2px] text-[13px]">Apple iPhone 12 Pro
+                                <img src="/images/product-right-3.png" alt="Product">
+                                <p class="w-[191px] leading-[18px]  font-semibold pt-[15px]">Apple iPhone 12 Pro
                                     Max 128GB - Unlocked</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[10px] -ml-[2px]">
-                                    <div class="flex text-[#FFB800]">
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[14px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </div>
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
-                                <div class="flex items-center space-x-[6px]  pt-[3px]">
-                                    <p class="text-[18px] text-[#DC323C] font-semibold -ml-[1px]">$128.00</p>
-                                    <p class="text-[#8D979E] "><del>$12.00</del></p>
+                                <div class="flex items-center space-x-[5px] -ml-[1px] pt-[1px]">
+                                    <p class="text-[18px] text-[#DC323C] font-semibold">$128.00</p>
+                                    <p class="text-[#8D979E] font-normal pt-[3px]"><del>$12.00</del></p>
                                 </div>
-                                <div class="flex text-[12px] items-center space-x-[6px] pt-[9px] -ml-[2px] ">
+                                <div class="flex text-[12px] items-center gap-1 pt-[10px] ">
                                     <i class="fa-solid fa-check text-[#008A00]"></i>
                                     <p class="text-[#008A00] font-medium">In stock</p>
                                     <p class="font-semibold">82</p>
@@ -439,10 +449,10 @@
                             class="w-[231px] h-[373px] border border-white bg-white rounded-[5px] flex justify-center hover:border-[#DC323C] hover:border hover:cursor-pointer ">
                             <div class=" pt-5 ">
                                 <img alt="Product" src="/images/product-right-4.png" class="pl-[1px]">
-                                <p class="w-[195px]  font-semibold pt-[14px] pl-[1px] text-[14px] ">Apple Watch Aluminum
+                                <p class="w-[191px] leading-[19px] font-semibold pt-[14px] ">Apple Watch Aluminum
                                     Case Pride Edition</p>
-                                <div class="flex text-[12px] items-center space-x-1 pt-[9px]">
-                                    <div class="flex text-[#FFB800]">
+                                <div class="flex text-[12px] items-center gap-[7px] pt-[12px]  font-medium">
+                                    <div class="flex text-[#FFB800]  text-[11px]">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -450,10 +460,10 @@
                                     <p class="text-[#8D979E] ">(68)</p>
                                 </div>
                                 <div>
-                                    <p class="text-[19px]  text-[#2B38D1] font-semibold">$1028.00</p>
+                                    <p class="text-[18px]  text-[#2B38D1] font-semibold pt-[1px] -ml-[1px]">$1028.00</p>
                                 </div>
                                 <div
-                                    class="flex text-[13px] items-center space-x-[6px] pt-[9px] -ml-[1px] text-[#EF262C] font-medium">
+                                    class="flex text-[12px] items-center space-x-[5px] pt-[10px]   text-[#EF262C] font-medium">
                                     <i class="fa-solid fa-check "></i>
                                     <p>Only 2 left in stock</p>
                                 </div>
@@ -466,66 +476,67 @@
         </div>
     </main>
 
-    <footer id="footer" class="bg-white ">
+    <footer id="footer" class="bg-white border-2">
         <div id="text-ft"
-            class="w-full max-w-[1410px] mx-auto h-[306px] flex justify-between items-center  text-[#515D66] font-medium">
-            <div class="w-[415px] h-[190px] space-y-[19px] ">
-                <p class="font-bold -ml-[3px]">ABOUT THE STORE</p>
-                <div>
-                    <p class="pl-[2px]">Got Question? Call us 24/7</p>
-                    <p id="phone" class="text-[#2B38D1] text-[29px] pt-[1px] pl-[2px]">+222-1800 -2628</p>
+            class="w-full  max-w-[1410px] mx-auto h-[307px] flex justify-between items-center  text-[#515D66] font-medium -mt-1">
+            <div class="w-[415px] h-[190px] space-y-[17px] ">
+                <p class="font-bold">ABOUT THE STORE</p>
+                <div class="pt-[1px]">
+                    <p>Got Question? Call us 24/7</p>
+                    <p id="phone" class="text-[#2B38D1] text-[30px] pt-[2px] -ml-[1px]">+222-1800-2628</p>
                 </div>
-                <div>
-                    <p class="pl-[3px]">268 St , South New York/NY 98944 , United States</p>
-                    <p class="pt-[1px]">Customersupportt@example.com</p>
-                    <p class="pt-[4px]">Info@example.com</p>
+                <div class="space-y-[3px]">
+                    <p class="">268 St, South New York/NY 98944, United States</p>
+                    <p class="">Customersupport@example.com</p>
+                    <p class="">Info@example.com</p>
                 </div>
             </div>
-            <div class="w-[176px] h-[218px] space-y-4 pt-[14px]">
+            <div class="w-[176px] h-[190px] space-y-[18px] ">
                 <p class="font-bold">INFOMATION</p>
-                <div class="space-y-3">
-                    <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">Blog Us </p>
+                <div class="space-y-3 ">
+                    <p class="hover:text-[#212529] hover:underline hover:cursor-pointer">Blog Us </p>
                     <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">About Us </p>
                     <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">Delivery Information</p>
                     <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">Privacy Policy </p>
                     <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">FeedBack </p>
                 </div>
             </div>
-            <div class="w-[176px] h-[218px] space-y-4 pt-[14px]">
-                <p class="font-bold text-[#212529]">QUICK LINKS</p>
+            <div class="w-[176px] h-[190px] space-y-[18px] ">
+                <p class="font-bold">QUICK LINKS</p>
                 <div class="space-y-3">
                     <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">Store Location </p>
                     <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">Orders Tracking </p>
                     <p class="hover:text-[#212529] hover:underline hover:cursor-pointer ">FAQs</p>
                 </div>
             </div>
-            <div class="w-[451px] h-[190px] space-y-[15px]  ">
+            <div class="w-[451px] h-[190px] space-y-[14px]  ">
                 <p class="font-bold ">SIGN UP TO NEWSLETTER</p>
-                <p id="join" class="text-[15px] pt-[3px]">Join 20.000+ subscribers and get a new discount coupon on
-                    every
-                    Saturday. Updates information on Sale and Offers.</p>
-                <div id="form-input" class="pt-[7px] space-x-[6px]">
+                <p id="join" class="text-[14px] pt-[3px] leading-6">Join 20.000+ subscribers and get a new discount
+                    coupon on
+                    every Saturday. Updates information on Sales and Offers.</p>
+                <div id="form-input" class="pt-[6px] space-x-[7px]">
                     <input id="input-ft" type="text"
                         class="w-[300px] h-[50px] border-2 rounded-[50px] pl-5 placeholder:text-[13px]"
                         placeholder="Your email address...">
                     <button id="button-ft" type="submit"
-                        class="bg-[#2b38d1] text-[12px] pl-[1px] text-white font-semibold border-none w-[140px] h-[50px] rounded-[50px] cursor-pointer">
+                        class="bg-[#2b38d1] text-[12px] text-white font-bold border-none w-[140px] h-[50px] rounded-[50px] cursor-pointer">
                         SUBSCRIBE
                     </button>
                 </div>
-                <p>Subscribe forr Uminex and get 20 % off your first purchase.</p>
+                <p>Subscribe for Uminex and get 20% off your first purchase.</p>
             </div>
 
         </div>
         <hr>
-        <div id="bottom-ft" class="w-full max-w-[1410px] h-[102px] mx-auto flex  justify-between items-center">
-            <p class="pl-[5px]">
+        <div id="bottom-ft"
+            class="w-full max-w-[1410px] font-medium h-[102px] mx-auto flex  justify-between items-center">
+            <p class="flex items-center gap-1 -ml-[1px]">
                 Copyright ©
-                <span class="font-bold text-[#2B38D1]">Uminex</span>
-                all rights reserved. Powered by
-                <span class="font-bold text-[#2B38D1] ">Blueskytechco</span>.
+                <span class="font-semibold text-[#2B38D1]">Uminex</span>
+                <span>all rights reserved. Powered by</span>
+                <span class="font-semibold text-[#2B38D1] ">Blueskytechco. </span>
             </p>
-            <div class="flex items-center space-x-[22px] pt-[1px]">
+            <div class="flex items-center space-x-[18px] pt-[1px]">
                 <p>Payment Method:</p>
                 <div class="flex items-center space-x-[6px] ">
                     <img src="/images/pt.png" alt="Method"
